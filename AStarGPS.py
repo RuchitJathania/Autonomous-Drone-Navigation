@@ -215,4 +215,3 @@ print("Solution on map: \n", solnMap)
 # need a function to expand from current node
 # need a data structure to store cameFrom nodes to reconstruct path when planning is finished
 # need a closedSet of nodes already visited
-
