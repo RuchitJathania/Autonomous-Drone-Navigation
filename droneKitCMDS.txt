@@ -1,0 +1,11 @@
+droneKit1: 
+	cd c:\College\Senior_Design\DroneCode\TestTutorial\
+
+	dronekit-sitl copter --home=-35.363261,149.165230,583,0
+
+	mavproxy --master tcp:127.0.0.1:5760 --sitl 127.0.0.1:5501 --out 127.0.0.1:14550 --out 127.0.0.1:14551 --out 127.0.0.1:14552
+
+	linux: 
+		python2 simple_goto.py --connect udp:0.0.0.0:14550
+
+New Goal Location in Lat, Long: -35.354073, 149.152031
